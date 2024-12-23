@@ -20,7 +20,7 @@ header{
     flex-direction:row;
     align-items: center;
     justify-content: center;
-    background-color: white;
+    background-color: rgb(247, 247, 247);
 }
 .imgLogo{
     width: 250px;
