@@ -93,7 +93,7 @@ section h2{
     border-top: 1px solid rgba(0, 0, 0, 0.6);
 }
 /* Estilos de la segunda seccion principla */
-.SECCION_2Index{
+.seccion_2Index{
     display: flex;
     max-width: 60%;
     margin: 0 auto;
