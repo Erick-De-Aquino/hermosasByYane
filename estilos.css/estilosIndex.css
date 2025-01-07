@@ -1,0 +1,385 @@
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Doto:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Charm:wght@400;700&family=Doto:wght@100..900&display=swap');
+*{
+    box-sizing: border-box;   
+}
+
+ 
+/* estilos del body*/
+body{
+    font-family: Arial;
+    margin: 0;
+}
+
+
+/* estilos del header */
+header{   
+    position: sticky; 
+    top: 0;
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(247, 247, 247);
+}
+.imgLogo{
+    width: 100px;
+    height: 100px;
+    border-radius: 60%;
+}
+h1{
+    margin: 0%;
+    padding: 0%;
+    font-family: allura;
+    font-size: 50px;
+    font-weight: 500;    
+}
+/*----------------------------------------------------------------------------------------------------------------------------------------*/
+/* estilos de la barra de navegacion */
+nav{
+    position: sticky;
+    top: 100px;
+    display: flex;
+    background-color: white;
+    background-image: linear-gradient(rgba(250, 235, 215, 0.43), black);
+}
+nav a{
+    color: white;
+    padding: 15px 15px;
+    text-decoration: none;
+    font-size: smaller;
+    letter-spacing: .07em;
+}
+/* Indica en que seccion de la pagina que estamos situados */
+.aqui{
+    color: white;
+    background-image: linear-gradient(white, rgba(250, 235, 215, 0.43));
+    color: black;
+}
+/* Cambio de color del la barra de navegacion */
+nav a:hover{
+    background-image: linear-gradient(white, rgba(31, 31, 31, 0.25));
+    color: black;
+}
+/*----------------------------------------------------------------------------------------------------------------------------------------*/
+/* Estilos de la seccion principal del index.html */
+h2{
+    text-align: center;
+    font-family: "Charm", cursive;
+    font-size: 40px;
+    padding-top: 10px;
+    color: rgba(0, 0, 0, 0.6);
+}
+.container{
+    display:grid;
+    grid-template-columns: 1fr 3fr ;
+    padding:  0px 50px 100px 50px;
+}
+.item-a{
+    grid-row: 1 / 3;
+}
+.container img{
+    width: 100%;
+    height: 100%;
+    padding: 30px;
+}
+
+/* Estilos de la segunda seccion principla */
+section{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.6);
+}
+.seccion_2Index{
+    display: flex;
+    max-width: 70%;
+    margin: 50px auto;
+}
+.imgsecundaria{
+    height: 400px;
+    float: left;
+    box-shadow: 7px 13px 37px #000;
+}
+.parrafoIndex{
+    margin-left: 100px;
+    display: grid;
+    place-items: center;
+    text-align: justify;
+    font-size: 30px;
+    font-family: "Charm", cursive;
+    color: rgba(0, 0, 0, 0.6);
+}
+.container_3{
+    margin: auto;
+    margin-bottom: 80px;
+    padding: 0;
+    display: flex;
+    max-width: 80%;
+}
+.img_3{
+    width: 33.4%;
+}
+.img_3 img{
+    margin: 0 130px;
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;    
+}
+.img_3 h3{
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 10px;
+
+}
+.img_3 h4{
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    font-size: 20px;
+}
+/*----------------------------------------------------------------------------------------------------------------------------------------*/
+/* Estilos seccion principal de servicios.html */
+.segSeccion{
+    max-width: 100%;
+}
+.segSeccion :last-child{
+    border-bottom: none;
+}
+.info{
+    display: flex;
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 25px;
+    border-bottom: 2px solid black;
+}
+.imgInfo{
+    margin:  50px;
+    height: 250px;
+    width: 250px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+.parrafoServicios{
+    display: grid;
+    margin: 30px;
+    place-items: center;
+    text-align: justify;
+    font-size: 25px;
+    font-family: "Charm", cursive;
+    color: rgba(0, 0, 0, 0.75)
+}
+/*----------------------------------------------------------------------------------------------------------------------------------------*/
+/* Estilos del contenedor Presupuesto.html */
+.contenedorPresupuesto{
+    margin: 50px;
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 20px;
+}
+.informacion{
+    margin-top: 0;
+    padding: 10px;
+    text-align: center;
+    font-size: 29px;
+    font-family: "Charm", cursive;
+    background-color: #24303c2a;
+    border-radius: 10px;
+}
+.container-pres{
+    width: 30%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 1.5% 1.5%;
+    border-radius: 5px;
+    background: #24303c;
+    box-shadow: 7px 13px 37px #000;
+}
+.container-pres *{
+    box-sizing: border-box;
+}
+.container-pres h2{
+    padding-top: 0;
+    margin-top: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(228, 228, 228);
+}
+.lista-principal{
+    list-style-type: none;
+    padding: 0;
+    margin: 0 auto;
+    max-width: 800px;
+}
+.lista-principal li{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    font-weight: 200;
+}
+.lista-principal li:not(:last-child){
+    margin-bottom: 20px
+}
+.lista-principal > li > label{
+    padding: 8px;
+    font-weight: 200;
+    font-size: small;
+    letter-spacing: .09em;
+    text-transform: uppercase;
+    flex: 1 0 30px;
+    max-width: 300px;
+    color: rgb(228, 228, 228);
+}
+.lista-principal > li > label + *{
+    flex: 1 0 210px;
+    max-width: 500px;
+}
+.check-term{
+    justify-content: center;
+    letter-spacing: .09em;
+    text-transform: uppercase;
+}
+.check-term input{
+    margin: 0 20px 0 0;
+}
+.check-term p, .check-term a{
+    color: rgb(228, 228, 228);
+    font-weight: 200;
+    font-size: small;
+}
+.lista-principal li:last-child{
+    justify-content: center;
+}
+.lista-principal li input, .lista-principal li textarea{
+    padding: 10px;
+    border-radius: 5px;
+    background: #24303c;
+    border: 2px solid rgb(131, 131, 131);;
+    color: antiquewhite;
+    font-size:small;
+}
+.lista-principal li button{
+    background: #1f53c5;
+    width: 95%;
+    padding: 5px;
+    color: #fff;
+    font-size: larger;
+}
+
+
+/*----------------------------------------------------------------------------------------------------------------------------------------*/
+/* Estilos del contenedor Contacto.html */
+/*
+h2{
+    padding: 20px 0 100px 0;
+    text-align: center;
+    font-size: 100px;
+    font-family: "Charm", cursive;
+}
+*/
+.contenedorContacto{
+    display: flex;
+    margin: 20px;
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 30px
+}
+
+.informacionContacto p{
+    width: 450px;
+    margin: 20px 30px;
+    object-fit: cover;
+    text-align: justify;
+    font-weight: 500;
+    font-size: x-large;
+    font-family: "Charm", cursive;
+}
+.informacionContacto p:not(:last-child){
+    margin-top: 120px;
+}
+
+.mapa{
+    margin: auto;
+    object-fit: cover;
+    box-shadow: 7px 13px 37px #000;
+}
+
+/*----------------------------------------------------------------------------------------------------------------------------------------*/
+/* Estilos del Galeria */
+.galeria{
+    max-width: 100%;
+    padding: 30px;
+    margin: 60px auto;
+    display: grid;
+    grid-template-columns: 200px 200px 200px 200px ;
+    grid-template-rows: 200px 200px 200px 200px 200px ;
+    grid-gap: 120px;
+    justify-content: center;
+    border-bottom: none;
+}
+.galeria img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 7px 13px 37px #000;
+}
+
+/*----------------------------------------------------------------------------------------------------------------------------------------*/
+/* Estilos del Footer */
+.footer{
+    background-color: #59595a;
+    padding: 10px 0;
+}
+.container_footer{
+    max-width: 100%;
+    margin: 0 auto;
+}
+.footer_row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer_links{
+    width: 33%;
+    padding: 0 80px;
+}
+.footer_links p {
+    font-size: 20px;
+    color: white;
+    margin-bottom: 5px;
+    font-weight: 500;
+    border-bottom: 2px solid #00C3FF;
+    padding-bottom: 10px;
+    display: inline-block;
+}
+.footer_links ul li{
+    font-size: 15px;
+}
+.footer_links ul li a{
+    font-size: 15px;
+    text-decoration: none;
+    color: #BBBBBB;
+    display: block;
+    margin-bottom: 15px;
+    transition: all .3s ease;
+}
+.footer_links ul li a:hover{
+    color: white;
+    padding-left: 6px;
+}
+.footer_links li{
+    font-size: 18px;
+    color: #BBBBBB;
+    list-style: none;
+}
+.social-links a{
+    display: inline-block;
+    min-height: 40px;
+    width: 40px;
+    background-color: rgba(255,255,255,0.2);
+    margin: 20px 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: white;
+    transition: all .5s ease;
+}
+.social-links a:hover{
+    background-color: #00C3FF;
+}
