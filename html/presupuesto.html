@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../estilosIndex.css">
+    <link rel="stylesheet" href="../estilos.css/estilosIndex.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="icon" type="image/jpg" href="./../assets/cabecera/IMAGEN-LOGO.jpg">
     <title>Hermosas By Yane/Presupuesto</title>
 </head>
 
@@ -15,7 +16,7 @@
     <!-- HEADER -->
     <header>
         <h1 class="allura-regular">Hermosas By Yane</h1>
-        <img class="imgLogo" src="../ASSETS/CABECERA/IMAGEN-LOGO.jpg" alt="Logo">
+        <img class="imgLogo" src="../assets/cabecera/IMAGEN-LOGO.jpg" alt="Logo" width="714" height="755">
     </header>
 
 
@@ -25,6 +26,7 @@
         <a href="../html/servicios.html">Servicios</a>
         <a class="aqui" href="../html/presupuesto.html">Presupuesto</a>
         <a href="../html/contacto.html">Contactos</a>
+        <a href="../html/productos.html">Productos</a>
     </nav>
 
 
@@ -38,18 +40,42 @@
 
 
         <!-- formulario de presupuesto -->
-        <div class="form-pres">
-            <h4>Presupuesto</h4>
-            <input class="celda" type="text" name="nombre" id="nombre" placeholder="Nombre" required>
-            <input class="celda" type="text" name="apellido" id="apellido" placeholder="Apellido" required>
-            <input class="celda" type="number" name="telefono" id="telefono" placeholder="Telefono" required>
-            <input class="celda" type="email" name="correo" id="correo" placeholder="Correo electronico" required>
-            <textarea class="textarea" name="textarea" id="textarea" placeholder="Aqui tus consultas"></textarea>
-            <div class="terminos">
-                <input class="check" type="checkbox" name="info" id="info">
-                <label for="info">Estoy de acuerdo con los <a href="">Terminos y Condiciones</a></label>
-            </div>
-            <button class="btnEnviar"  >Enviar</button>
+        <div class="container-pres">
+            <h2>Presupuesto</h2>
+            <form action="#" name="form-presupuesto" id="form-presupuesto" method="get" target="_self">
+                <ul class="lista-principal">
+                    <li>
+                        <label for="nombre-pres">Nombre</label>
+                        <input type="text" id="nombre-pres" name="nombre-pres" placeholder="Escriba su nombre"
+                        pattern="[A-Z a-z]{3,15}" title="Aqui debes escribir tu nombre" required>
+                    </li>
+                    <li>
+                        <label for="apellido-pres">Apellido</label>
+                        <input type="text" id="apellido-pres" name="apellido-pres" placeholder="Escriba su apellido"
+                        pattern="[A-Z a-z]{3,15}" title="Aqui debes escribir tu apellido" required>
+                    </li>
+                    <li>
+                        <label for="correo-pres">Correo electronico</label>
+                        <input type="email" id="correo-pres" name="correo-pres" placeholder="Escriba su correo electronico"
+                        pattern="[A-Za-z0-9_-.]+@[A-Za-z0-9_-.]+\.[a-z]{2,4}" title="Aqui debes escribir tu correo" required>
+                    </li>
+                    <li>
+                        <label for="surname">Telefono</label>
+                        <input type="tel" id="telephono" name="telephono" placeholder="Escriba su Telefono" pattern="[0-9]{9}" title="escriba los nueve numeros de su telefono movil" required>
+                    </li>
+                    <li>
+                        <label for="message">Mensaje</label>
+                        <textarea name="message" id="message" rows="6" placeholder="escriba su comentario"></textarea>
+                    </li>
+                    <li class="check-term">
+                        <input type="checkbox" id="check-term" name="check-term">
+                        <p>Acepto los <a href="#">Terminos y condiciones</a></p>
+                    </li>
+                    <li>
+                        <button type="submit">Enviar</button>
+                    </li>
+                </ul>
+            </form>
         </div>
     </section>
 
