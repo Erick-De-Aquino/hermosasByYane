@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../estilosIndex.css">
+    <link rel="stylesheet" href="../estilos.css/estilosIndex.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <title>Hermosas By Yane/Contacto</title>
 </head>
@@ -13,7 +13,7 @@
     <!-- HEADER -->
     <header>
         <h1 class="allura-regular">Hermosas By Yane</h1>
-        <img class="imgLogo" src="../ASSETS/CABECERA/IMAGEN-LOGO.jpg" alt="Logo">
+        <img class="imgLogo" src="../assets/cabecera/IMAGEN-LOGO.jpg" alt="Logo" width="714" height="755">
     </header>
     
 
@@ -23,33 +23,57 @@
         <a href="../html/servicios.html">Servicios</a>
         <a href="../html/presupuesto.html">Presupuesto</a>
         <a class="aqui" href="../html/contacto.html">Contactos</a>
+        <a href="../html/productos.html">Productos</a>
     </nav>
 
 
     <!-- Seccion Principal -->
     <h2>Unete a nuestra comunidad</h2>
-    <section class="contenedorContatcto">
+    <section class="contenedorContacto">
         <div class="informacionContacto">
             <p>Ademas de nuestras redes, tambien puedes unirte a esta comunidad de clientas rellenando el formulario de la derecha.</p>
             <p>Si quieres agendar una cita para uno o varios de nuestros servicios, puedes hacerlo desde nustra app de citas haciendo clik <a href="https://booksy.com/es-es/70405_hermosasbyyane_salon-de-unas_48852_badalona#ba_s=sh_1">AQUI</a></p>
         </div>
         <div class="mapa">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2990.5356164693276!2d2.228048674453327!3d41.4492969921552!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4bbcbfd74d391%3A0xc00b3490889d9a66!2sHermosas%20by%20yane!5e0!3m2!1ses-419!2ses!4v1734089142753!5m2!1ses-419!2ses"
-                width="600"
-                height="670">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2990.5356164693276!2d2.228048674453327!3d41.4492969921552!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4bbcbfd74d391%3A0xc00b3490889d9a66!2sHermosas%20by%20yane!5e0!3m2!1ses-419!2ses!4v1734089142753!5m2!1ses-419!2ses" width="450" height="450">
             </iframe>
         </div>
-        <div class="form-registroContacto">
-            <h4>Registro</h4>
-            <input class="celda" type="text" name="nombre" id="nombre" placeholder="Nombre">
-            <input class="celda" type="text" name="apellido" id="apellido" placeholder="Apellido">
-            <input class="celda" type="number" name="telefono" id="telefono" placeholder="Telefono">
-            <input class="celda" type="email" name="correo" id="correo" placeholder="Correo electronico">
-            <input class="celda" type="password" name="contraseña" id="contraseña" placeholder="Contraseña">
-            <p>Estoy de acuerdo con los <a href="">Terminos y Condiciones</a></p>
-            <input class="boton-registroContacto" type="submit" value="Registrar">
-            <p><a href="#">¿Ya tengo cuenta?</a></p>
-        </div>
+        <div class="container-pres">
+            <form action="#" name="form-presupuesto" id="form-presupuesto" method="get" target="_self">
+                <ul class="lista-principal">
+                    <li>
+                        <label for="nombre-pres">Nombre</label>
+                        <input type="text" id="nombre-pres" name="nombre-pres" placeholder="Escriba su nombre"
+                        pattern="[A-Z a-z]{3,15}" title="Aqui debes escribir tu nombre" required>
+                    </li>
+                    <li>
+                        <label for="apellido-pres">Apellido</label>
+                        <input type="text" id="apellido-pres" name="apellido-pres" placeholder="Escriba su apellido"
+                        pattern="[A-Z a-z]{3,15}" title="Aqui debes escribir tu apellido" required>
+                    </li>
+                    <li>
+                        <label for="correo-pres">Correo electronico</label>
+                        <input type="email" id="correo-pres" name="correo-pres" placeholder="Escriba su correo electronico"
+                        pattern="[A-Za-z0-9_-.]+@[A-Za-z0-9_-.]+\.[a-z]{2,4}" title="Aqui debes escribir tu correo" required>
+                    </li>
+                    <li>
+                        <label for="surname">Telefono</label>
+                        <input type="tel" id="telephono" name="telephono" placeholder="Escriba su Telefono" pattern="[0-9]{9}" title="escriba los nueve numeros de su telefono movil" required>
+                    </li>
+                    <li>
+                        <label for="message">Mensaje</label>
+                        <textarea name="message" id="message" rows="6" placeholder="escriba su comentario"></textarea>
+                    </li>
+                    <li class="check-term">
+                        <input type="checkbox" id="check-term" name="check-term">
+                        <p>Acepto los <a href="#">Terminos y condiciones</a></p>
+                    </li>
+                    <li>
+                        <button type="submit">Enviar</button>
+                    </li>
+                </ul>
+            </form>
+        
     </section>
 
     <!--Footer-->
