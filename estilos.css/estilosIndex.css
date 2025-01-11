@@ -261,7 +261,9 @@ section{
     color: #fff;
     font-size: larger;
 }
-
+.lista-principal li input:focus,.lista-principal li textarea:focus{
+    background: #32393f;
+}
 
 /*----------------------------------------------------------------------------------------------------------------------------------------*/
 /* Estilos del contenedor Contacto.html */
