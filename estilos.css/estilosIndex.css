@@ -262,19 +262,10 @@ section{
     font-size: larger;
 }
 .lista-principal li input:focus,.lista-principal li textarea:focus{
-    background: #32393f;
+    background: #34383c;
 }
 
 /*----------------------------------------------------------------------------------------------------------------------------------------*/
-/* Estilos del contenedor Contacto.html */
-/*
-h2{
-    padding: 20px 0 100px 0;
-    text-align: center;
-    font-size: 100px;
-    font-family: "Charm", cursive;
-}
-*/
 .contenedorContacto{
     display: flex;
     margin: 20px;
