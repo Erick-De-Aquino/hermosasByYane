@@ -6,6 +6,7 @@
     box-sizing: border-box;
 }
 body{
+    background-color: rgb(247, 247, 247);
     margin: 0 auto;
     width: 1500px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
