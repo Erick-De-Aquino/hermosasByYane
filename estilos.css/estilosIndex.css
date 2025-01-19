@@ -188,7 +188,7 @@ footer div a{
 
 @media (max-width:600px){
     body{
-        width: 600px;
+        width: 100vh;
     }
     header{
         display: flex;
@@ -202,7 +202,7 @@ footer div a{
         
     }
     main{
-        width: 600px;
+        width: 100vh;
         background-image: none;
     }
     main .uno h2{
@@ -213,7 +213,7 @@ footer div a{
     }
     main .uno div{
         display: flex;
-        width: 600px;
+        width: 100vh;
         justify-content: center;
     }
     main .uno div img{
@@ -237,7 +237,7 @@ footer div a{
         display: none;
     }
     footer{
-        width: 600px;
+        width: 100vh;
         flex-direction: column;
         text-align: center;
     }
