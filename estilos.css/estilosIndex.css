@@ -186,7 +186,7 @@ footer div a{
 }
 
 
-@media screen and (max-width:600px){
+@media (max-width:600px){
     body{
         width: 600px;
     }
