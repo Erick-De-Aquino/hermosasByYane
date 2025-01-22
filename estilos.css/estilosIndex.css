@@ -5,155 +5,136 @@
     padding: 0;
     box-sizing: border-box;
 }
-body{
-    background-color: rgb(247, 247, 247);
-    margin: 0 auto;
-    width: 1500px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+/*||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||*/
+/*||||||||||||||||||||||||||||||||||BARRA DE NAVEGACION|||||||||||||||||||||||||||||||||||||||||*/
+/*||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||*/
+h2{
+    font-family: "charm", cursive;
+    font-size: 40px;
+    color: rgba(0,0,0,0.6);
 }
-main{
-    background-image: url(./../assets/cabecera/IMAGEN-LOGO.jpg);
-    background-repeat: no-repeat;
-    background-attachment:scroll;
-    background-size: 1000px 1000px;
-    background-position: center;
-    background-position-y: 600px;
-}
-
-
-
-/*****************************************HEADER STYLES************************************/
-header{
-    position: sticky;
-    top: 0;
+.navbar{
+    position: relative;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     background-color: rgb(247, 247, 247);
 }
-header img{
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-}
-header h1{
-    margin-right: 30px;
-    font-family: allura;
-    font-size: 60px;
-    font-weight: 500;    
-}
-
-
-/*****************************************NAV STYLES************************************/
-nav{
+.navbar div{
     display: flex;
-    background-image: linear-gradient(rgba(250, 235, 215), black);
-    position: sticky;
-    top: 120px;
-    justify-content: center;
+    align-items: center;
+    margin: auto 30px;
 }
-nav a{
-    color: white;
-    padding: 10px 30px;
+.navbar div h1{
+    font-size: 60px;
+    font-weight: 550;
+    font-family: allura;
+}
+.logo{
+    margin: auto 30px;
+    height: 100px;
+    width: 100px;
+    border-radius: 50px;
+}
+.nav-links{
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    margin-right: 50px;
+}
+.nav-links li a{
     text-decoration: none;
+    font-size: 23px;
+    height: 100%;
+    color: black;
+    transition: all 0.5s;
+}
+.nav-links li a:hover{
+    color: lightslategray;
     
 }
-nav a:hover{
-    background-color: #000;
-    border-radius: 5px;
+.check-menu{
+    display: none;
 }
-.aqui{
-    background-image: linear-gradient(white, rgba(129, 120, 110, 0.43));
-    color: black;
-    border-radius: 5px;
+.label-check{
+    display: none;
 }
+/*||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||*/
+/*|||||||||||||||||||||||||||||||||||||||||MAIN|||||||||||||||||||||||||||||||||||||||||||||||||*/
+/*||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||*/
 
-
-
-
-/*****************************************MAIN STYLES************************************/
-main{
-    display: flex;
-    flex-direction: column;
-    width: 1500px;
-}
-main h2{
-    padding: 20px;
-    text-align: center;
-    font-family: "Charm", cursive;
-    font-size: 2.5rem;
-    color: rgb(75, 75, 75);
-}
 .uno{
-    padding-top: 30px;
-    width: 1500px;
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 70px;
-
-}
-main section div{
-    display:grid;
-    grid-template-columns: 1fr 3fr ;
-    padding: 10px;
-}
-.item-a{
-    grid-row: 1 / 2;
-}
-main section div img{
     width: 100%;
-    height: 100%;
-    padding: 20px 20px;
-}
-.dos{
-    padding-top: 70px;
+    height: 100vh;
     display: flex;
     flex-direction: column;
-    margin-bottom: 70px;
-    border-top: 1px solid;
+    text-align: center;
+    align-items: center;
+    justify-content: center;   
 }
-main .dos div{
+.uno h2{
+    margin-bottom: 30px;
+    padding: 30px;
+    
+}
+.uno div{
+    width: 95%;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    align-items: center;
+    justify-content: center;   
+    gap: 40px;
+    margin-bottom: 150px;
+}
+/*----------------------------------------------------------------------------------------------*/
+.dos{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+.dos div{
     display: flex;
     justify-content: center;
+    align-items: center;
+    width: 80%;
 }
-main .dos div img{
-    width: 250px;
-    box-shadow: 7px 13px 37px #000;
-    object-fit: cover;
+.dos img{
+    margin: 40px;
+    box-shadow: 10px 10px 30px;
 }
-main .dos div p{
-    width: 60%;
-    margin-left: 90px;
-    display: flex;
-    place-items: center;
-    text-align: justify;
+.dos p{
+    margin: 40px;
+    padding: 40px;
     font-size:2rem;
     font-family: "Charm", cursive;
+    text-align: justify;
     color: rgba(0, 0, 0, 0.65);   
 }
-main .tres{
-    padding-top: 70px;
-    margin-bottom: 70px;
-    border-top: 1px solid;    
-}
-main .tres div{
-    display: flex;
-    align-items: center;
-    justify-content:space-around;
-}
-main .tres div article{
+/*----------------------------------------------------------------------------------------------*/
+.tres{
+    height: 100vh;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     text-align: center;
+    align-items: center;
+    margin-top: -30px;
 }
-main .tres div img{
-    width: 200px;
-    height: 200px;
+.tres h2{
+    margin-bottom: 100px;
+    padding: 20px;
 }
-
-
-/***************************************** FOOTER ************************************/
-
+.tres div{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+/*||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||*/
+/*||||||||||||||||||||||||||||||||||||||||FOOTER||||||||||||||||||||||||||||||||||||||||||||||||*/
+/*||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||*/
 footer{
     background-color: #59595a;
     display: flex;
@@ -185,64 +166,143 @@ footer div a{
     color: white;
     text-decoration: none;
 }
+/*||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||*/
+/*|||||||||||||||||||||||||||||||||||||||||MEDIA||||||||||||||||||||||||||||||||||||||||||||||||*/
+/*||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||*/
 
-
-@media (max-width:600px){
-    body{
-        width: 100vh;
+@media (max-width:767px){
+    .menu-hamburguesa{
+        width: 45px;
+        height: 45px;
     }
-    header{
-        display: flex;
-        flex-direction: column-reverse;
-        position: static;
-    }
-    nav{
-        position: static;
-        flex-direction: column;
-        text-align: center;
-        
-    }
-    main{
-        width: 100vh;
-        background-image: none;
-    }
-    main .uno h2{
-        width: 100vh;
-    }
-    main .uno div .item-a{
-        display: none;
-    }
-    main .uno div{
-        display: flex;
-        width: 100vh;
-        justify-content: center;
-    }
-    main .uno div img{
-        width: 100%;
-    }
-    main .dos div img{
-        display: none;
-    }
-    main .dos div p{
-        width: 80%;
+    .logo{
         margin: 0;
+    }
+    .label-check{
+        display: block;
+    }
+    .navbar{
+        display: flex;
+        justify-content: space-around;
+    }
+    .navbar div{
+        margin: auto 10px;
+    }
+    .navbar div h1{
+        font-size: 30px;
+        font-weight: 500;
+        font-family: allura;
+        text-align: center;
+    }
+    .nav-links{
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        width: 100%;
+        gap: 0;
+        background-image: linear-gradient(rgb(250, 235, 215), black);
+    }
+    .nav-links li a{
+        display: flex;
+        justify-content: center;
+        height: 40px;
+        align-items: center;
+        color: white;
+    }
+    .nav-links li a:hover{
+        background-image: linear-gradient(white, rgba(31, 31, 31, 0.25));
+        color: black;
+    }
+    .check-menu:checked + .nav-links{
+        display: flex;
+    }
+    /*-------------------------------MAIN-----------------------------------*/
+    .uno{
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding-top: 40px;
+        margin: 0px auto;
+        margin-bottom: -70px;
+    }
+    .uno div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .img1{
+        display: none ;
+    }
+    .uno img{
+        width: 550px;
+        height: 23vh;
+        min-height: 100px;
+    }
+    .dos{
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        margin: 40px 20px;
+        border: 1px solid black ;
+        border-radius: 5px;
+    }
+    .dos img{
+        display: none;
+    }
+    .dos h2{
+        margin-bottom: 20px;
+    }
+    .dos p{
+        font-family: "charm", cursive;
+        font-size: 22px;
+        padding: 0;
+        margin: 20px;
         text-indent: 40px;
     }
-    main .tres div{
+    .tres{
+        height: auto;
+        display: flex;
         flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin-bottom: 40px;
     }
-    main .tres div article{
-        margin: 20px 0;
+    .tres h2{
+        margin: 20px auto;
     }
-    main .tres div h4{
+    .tres div{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .tres article{
+        margin: 30px;
+        
+    }
+    .tres img{
+        max-width: 300px;
+        max-height: 300px;
+    }
+    .tres h4{
         display: none;
     }
     footer{
-        width: 100vh;
+        width: 100%;
         flex-direction: column;
         text-align: center;
+        justify-content: center;
+        align-items: center;
     }
     footer div{
         justify-items: center;
     }
-}
+}   
