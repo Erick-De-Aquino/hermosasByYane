@@ -1,36 +1,43 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./estilos.css/estilosIndex.css">
+    <link rel="stylesheet" href="./css/estilos.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
-    <title>Hermosas By Yane Mejorado</title>
+    <title>Hermosas By Yane3</title>
 </head>
 <body>
-    <header>
-        <h1>Hermosas By Yane</h1>
-        <img src="./assets/cabecera/IMAGEN-LOGO.jpg" alt="logo" width="714" height="755">
-    </header>
-    <nav>
-        <a class="aqui" href="#">Inicio</a>
-        <a href="#">Servicios</a>
-        <a href="#">Presupuesto</a>
-        <a href="#">Contacto</a>
-        <a href="#">Productos</a>
+    <nav class="navbar">
+        <div>
+            <h1>Hermosas By Yane</h1>
+            <img class="logo" src="./assets/imagenes/IMAGEN-LOGO.jpg" alt="">
+        </div>
+        <input type="checkbox" id="check-menu" class="check-menu">
+        <ul class="nav-links">
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Servicios</a></li>
+            <li><a href="#">Presupuesto</a></li>
+            <li><a href="#">Contacto</a></li>
+            <li><a href="#">Productos</a></li>
+        </ul>
+        <label for="check-menu" class="label-check">
+            <img class="menu-hamburguesa" src="./assets/imagenes/menu.svg" alt="img menu" width="60" height="60">
+        </label>
     </nav>
+    
     <main>
         <section class="uno">
             <h2>Eleva tus expectativas y descubre el arte de la belleza en nuestro salón.</h2>
             <div>
-                <img class="item-a" src="./assets/seccion_principal/seccion_principal_1/IMGIZQ.png" alt="mano" width="832" height="788">
-                <img src="./assets/seccion_principal/seccion_principal_1/IMGDER.jpg" alt="cara" width="1920" height="585">
+                <img class="img1" src="./assets/seccion_principal/seccion_principal_1/IMGIZQ.png" alt="mano" width="400" height="400">
+                <img src="./assets/seccion_principal/seccion_principal_1/IMGDER.jpg" alt="cara" width="1200" height="400">
             </div>
         </section>
         <section class="dos">
             <h2>Nuestro objetivo</h2>
             <div>
-                <img src="./assets/seccion_principal/seccion_principal_2/IMGSECUNDARIA_1.jpg" alt="manos" width="360" height="540">
+                <img src="./assets/seccion_principal/seccion_principal_2/IMGSECUNDARIA_1.jpg" alt="manos" width="320" height="480">
                 <p>
                     Somos un grupo de profesionales apasionadas por la estética, los detalles, la durabilidad y 
                     calidad de nuestros servicios. Lo que te prometemos en HERMOSAS BY YANE, es una cita dedicada,
@@ -42,17 +49,17 @@
             <h2>Algunos de nuestros productos</h2>
             <div>
                 <article>
-                    <img  src="./assets/seccion_principal/seccion_principal_3/pintura_de_uñas.jpg" alt="esmaltes de uñas" width="1000" height="1001">
+                    <img  src="./assets/seccion_principal/seccion_principal_3/pintura_de_uñas.jpg" alt="esmaltes de uñas" width="300" height="300">
                     <h3>Esmaltes</h3>
                     <h4>Para uñas perfectas</h4>
                 </article>
                 <article>
-                    <img  src="./assets/seccion_principal/seccion_principal_3/rimel.jpg" alt="rimel" width="600" height="600">
+                    <img  src="./assets/seccion_principal/seccion_principal_3/rimel.jpg" alt="rimel" width="300" height="300">
                     <h3>Maquillaje</h3>
                     <h4>Luce Pestañas maravillosas</h4>
                 </article>
                 <article>
-                    <img  src="./assets/seccion_principal/seccion_principal_3/herramientas.webp" alt="herramientas" width="1080" height="1080">
+                    <img  src="./assets/seccion_principal/seccion_principal_3/herramientas.webp" alt="herramientas" width="300" height="300">
                     <h3>Productos</h3>
                     <h4>Hazlo mas facil</h4>
                 </article>
@@ -60,7 +67,6 @@
         </section>
     </main>
 
-    <!--footer-->
     <footer>
         <div>
             <h3>Nuestras Redes</h3>
