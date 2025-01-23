@@ -13,6 +13,7 @@ h2{
     font-family: "charm", cursive;
     font-size: 40px;
     color: rgba(0,0,0,0.6);
+    text-align: center;
 }
 .navbar{
     position: relative;
@@ -59,6 +60,9 @@ h2{
 }
 .label-check{
     display: none;
+}
+.nav-links li .aqui{
+    color: orange;
 }
 /*||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||*/
 /*|||||||||||||||||||||||||||||||||||||||||MAIN|||||||||||||||||||||||||||||||||||||||||||||||||*/
@@ -132,6 +136,56 @@ h2{
     display: flex;
     justify-content: space-around;
 }
+/*||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||*/
+/*|||||||||||||||||||||||||||||||||||||MAIN SERVICIOS|||||||||||||||||||||||||||||||||||||||||||*/
+/*||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||*/
+
+.main-servicios h2{
+    margin: 60px auto;
+}
+.segSeccion{
+    max-width: 100%;
+}
+.segSeccion :last-child{
+    border-bottom: none;
+}
+.info{
+    display: flex;
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 25px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.503);
+    align-items: center;
+}
+.info img{
+    margin:  50px;
+    height: 250px;
+    width: 250px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+.info h3{
+    text-align: center;
+    font-size: 25px;
+    font-family: "Charm", cursive;
+    color: rgba(0, 0, 0, 0.75)
+}
+.info p{
+    margin: 30px;
+    place-items: center;
+    text-align: justify;
+    font-size: 25px;
+    font-family: "Charm", cursive;
+    color: rgba(0, 0, 0, 0.75)
+}
+.info:nth-child(2n+2){
+    display: flex;
+    flex-direction: row-reverse;
+}
+.info:last-child{
+    border-bottom: none;
+}
+
 /*||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||*/
 /*||||||||||||||||||||||||||||||||||||||||FOOTER||||||||||||||||||||||||||||||||||||||||||||||||*/
 /*||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||*/
@@ -294,6 +348,16 @@ footer div a{
     }
     .tres h4{
         display: none;
+    }
+    .info{
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+    .info:nth-child(2n+2){
+        display: flex;
+        flex-direction: column;
     }
     footer{
         width: 100%;
