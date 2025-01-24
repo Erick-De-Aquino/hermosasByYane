@@ -46,7 +46,6 @@ h2{
 .nav-links li a{
     text-decoration: none;
     font-size: 23px;
-    height: 100%;
     color: black;
     transition: all 0.5s;
 }
@@ -394,6 +393,7 @@ footer div a{
     .navbar{
         display: flex;
         justify-content: space-around;
+        width: 100%;
     }
     .navbar div{
         margin: auto 10px;
@@ -411,6 +411,7 @@ footer div a{
         top: 100%;
         width: 100%;
         gap: 0;
+        margin: 0;
         background-image: linear-gradient(rgb(250, 235, 215), black);
     }
     .nav-links li a{
