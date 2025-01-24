@@ -509,7 +509,7 @@ footer div a{
         padding: 0;
     }
     .info p{
-        margin: 30px auto;
+        margin: 30px a;
     }
     .info:nth-child(2n+2){
         display: flex;
@@ -544,6 +544,7 @@ footer div a{
         margin: 0;
     }
     .galeria div{
+        width: 90%;
         justify-content: space-around;
     }
     .galeria div img{
