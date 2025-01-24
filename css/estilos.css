@@ -314,6 +314,10 @@ h2{
     object-fit: cover;
     box-shadow: 7px 13px 37px #000;
 }
+.mapa iframe{
+    width: 470px;
+    height: 470px;
+}
 /*||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||*/
 /*|||||||||||||||||||||||||||||||||||||MAIN PRODUCTOS|||||||||||||||||||||||||||||||||||||||||||*/
 /*||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||*/
@@ -521,6 +525,9 @@ footer div a{
         flex-direction: column;
     }
     /*-----------------------------MAIN-PRESUPUESTO------------------------------------*/
+    .contenedorPresupuesto{
+        margin: 20px;
+    }
     .container-pres{
         width: 95%;
         padding: 20px ;
@@ -530,15 +537,23 @@ footer div a{
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        padding: 10px;
     }
     .informacionContacto{
         margin-bottom: 20px;
         width: 100%;
+        max-width: 500px;
     }
     .mapa{
-        margin: 30px auto;
+        width: 100%;
+        max-width: 500px;
+    }
+    .mapa iframe{
+        width: 100%;
+        max-width: 500px;
     }
     .container-pres{
+        max-width: 500px;
         margin: 30px auto;
     }
     /*--------------------------------MAIN-GALERIA-------------------------------------*/
