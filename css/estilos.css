@@ -203,8 +203,6 @@ h2{
 }
 .container-pres{
     width: 30%;
-    max-width: 1000px;
-    margin: 30px auto;
     padding: 1.5% 1.5%;
     border-radius: 5px;
     background: #24303c;
@@ -287,6 +285,8 @@ h2{
 /*||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||*/
 .contenedorContacto{
     display: flex;
+    justify-content: space-around;
+    align-items: center;
     margin: 20px;
     border: 2px solid black;
     border-radius: 20px;
@@ -298,11 +298,9 @@ h2{
     text-align: center;
     align-items: center;
     justify-content: center;
+    width: 25%;
 }
 .informacionContacto p{
-    width: 450px;
-    margin: 20px 30px;
-    object-fit: cover;
     text-align: justify;
     font-weight: 500;
     font-size: x-large;
@@ -310,7 +308,6 @@ h2{
     text-indent: 30px;
 }
 .mapa{
-    margin: 20px auto;
     object-fit: cover;
     box-shadow: 7px 13px 37px #000;
 }
@@ -523,9 +520,18 @@ footer div a{
     /*-------------------------------MAIN-CONTACTO-------------------------------------*/
     .contenedorContacto{
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .informacionContacto{
+        margin-bottom: 20px;
+        width: 100%;
+    }
+    .mapa{
+        margin: 30px auto;
     }
     .container-pres{
-        padding: 30px;
+        margin: 30px auto;
     }
     /*--------------------------------MAIN-GALERIA-------------------------------------*/
     .galeria{
@@ -543,7 +549,6 @@ footer div a{
         margin: 20px;
     }
     /*------------------------------------FOOTER---------------------------------------*/
-
     footer{
         width: 100%;
         flex-direction: column;
