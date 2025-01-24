@@ -3,33 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./../estilos.css/estilosIndex.css">
+    <link rel="stylesheet" href="./../css/estilos.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
-    <link rel="icon" type="image/jpg" href="./../assets/cabecera/IMAGEN-LOGO.jpg">
-    <title>Hermosas By Yane/Presupuesto</title>
+    <title>Hermosas By Yane3</title>
 </head>
-
-
 <body>
-
-
     <!-- HEADER -->
-    <header>
-        <h1 class="allura-regular">Hermosas By Yane</h1>
-        <img class="imgLogo" src="./../assets/cabecera/IMAGEN-LOGO.jpg" alt="Logo" width="714" height="755">
-    </header>
-
-
-    <!--Navigation Bar-->
-    <nav>
-        <a href="../index.html">Inicio</a>
-        <a href="../html/servicios.html">Servicios</a>
-        <a class="aqui" href="../html/presupuesto.html">Presupuesto</a>
-        <a href="../html/contacto.html">Contactos</a>
-        <a href="../html/productos.html">Productos</a>
+    <nav class="navbar">
+        <div>
+            <h1>Hermosas By Yane</h1>
+            <img class="logo" src="./../assets/imagenes/IMAGEN-LOGO.jpg" alt="">
+        </div>
+        <input type="checkbox" id="check-menu" class="check-menu">
+        <ul class="nav-links">
+            <li><a href="./../index.html">Inicio</a></li>
+            <li><a href="./../views/servicios.html">Servicios</a></li>
+            <li><a class="aqui" href="./../views/presupuesto.html">Presupuesto</a></li>
+            <li><a href="./../views/contacto.html">Contacto</a></li>
+            <li><a href="./../views/productos.html">Productos</a></li>
+        </ul>
+        <label for="check-menu" class="label-check">
+            <img class="menu-hamburguesa" src="./../assets/imagenes/menu.svg" alt="img menu" width="60" height="60">
+        </label>
     </nav>
-
-
     <!--Seccion Principal-->
     <section class="contenedorPresupuesto">
         <div>
@@ -37,8 +33,6 @@
                 Si te gustaria tener una información mas precisa de nuentros productos y servicios, dejanos saber todas tus dudas en el siguiente formulario.
             </p>
         </div>
-
-
         <!-- formulario de presupuesto -->
         <div class="container-pres">
             <h2>Presupuesto</h2>
@@ -78,36 +72,24 @@
             </form>
         </div>
     </section>
-
-
     <!--Footer-->
-    <footer class="footer">
-        <div class="container_footer">
-            <div class="footer_row">
-                <div class="footer_links">
-                    <p>Nuestras Redes</p>
-                    <div class="social-links">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-linkedin"></i></a>
-                    </div>
-                </div>
-                <div class="footer_links">
-                    <p>Contactos</p>
-                    <ul>
-                        <li>Telefono Local</li>
-                        <li>Telefono Movil</li>
-                    </ul>
-                </div>
-                <div class="footer_links">
-                    <p>Ubicanos</p>
-                    <ul>
-                        <li>Av. de Catalunya, 44, local 2B, 08917 Badalona, Barcelona</li>
-                        <li><a href="https://www.google.com/maps/place/Hermosas+by+yane/@41.449293,2.2280487,17z/data=!3m1!4b1!4m6!3m5!1s0x12a4bbcbfd74d391:0xc00b3490889d9a66!8m2!3d41.449293!4d2.2306236!16s%2Fg%2F11vpvbbpv5?authuser=0&entry=ttu&g_ep=EgoyMDI0MTIwMi4wIKXMDSoASAFQAw%3D%3D">Ir a Google Maps</a></li>
-                    </ul>
-                </div>
-            </div>
+    <footer>
+        <div>
+            <h3>Nuestras Redes</h3>
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+        </div>
+        <div>
+            <h3>Contactos</h3>
+            <p>Telefono Local</p>
+            <p>Telefono Movil</p>
+        </div>
+        <div>
+            <h3>Ubicanos</h3>
+            <p>Av. de Catalunya, 44, local 2B, 08917 Badalona, Barcelona</p>
+            <a href="https://www.google.com/maps/place/Hermosas+by+yane/@41.449293,2.2280487,17z/data=!3m1!4b1!4m6!3m5!1s0x12a4bbcbfd74d391:0xc00b3490889d9a66!8m2!3d41.449293!4d2.2306236!16s%2Fg%2F11vpvbbpv5?authuser=0&entry=ttu&g_ep=EgoyMDI0MTIwMi4wIKXMDSoASAFQAw%3D%3D">Ir a Google Maps</a>
         </div>
     </footer>
 </body>
