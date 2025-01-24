@@ -504,9 +504,12 @@ footer div a{
     /*------------------------------MAIN-SERVICIOS-------------------------------------*/
     .info{
         flex-direction: column;
-        text-align: center;
         align-items: center;
         justify-content: center;
+        padding: 0;
+    }
+    .info p{
+        margin: 30px auto;
     }
     .info:nth-child(2n+2){
         display: flex;
