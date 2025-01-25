@@ -82,12 +82,17 @@ h2{
 }
 .uno div{
     width: 95%;
-    display: grid;
-    grid-template-columns: 1fr 3fr;
+    display: flex;
     align-items: center;
     justify-content: center;   
     gap: 40px;
     margin-bottom: 150px;
+}
+.img1{
+    width: 30%;
+}
+.img2{
+    width: 70%;
 }
 /*----------------------------------------------------------------------------------------------*/
 .dos{
